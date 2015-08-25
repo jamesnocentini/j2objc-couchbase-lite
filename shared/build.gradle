@@ -1,0 +1,17 @@
+// File: shared/build.gradle
+plugins {
+    id 'java'
+    id 'com.github.j2objccontrib.j2objcgradle' version '0.4.2-alpha'
+}
+
+// Plugin settings:
+j2objcConfig {
+    xcodeProjectDir '../ios'  // Xcode workspace directory (suggested directory name)
+    xcodeTarget 'IOS-APP'     // iOS app target name (replace with existing app name)
+
+    finalConfigure()          // Must be last call to configuration
+}
+
+dependencies {
+    compile 'com.couchbase.lite:couchbase-lite-java:1.1.0'
+}
