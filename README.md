@@ -6,3 +6,5 @@
 folder containing the J2ObjC framework you downloaded in step 2.
 
 Build and run the application in Android Studio.
+
+This project was set up following the instructions on the J2ObjC Gradle plugin [README](https://github.com/j2objc-contrib/j2objc-gradle).
